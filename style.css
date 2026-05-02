@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #232531;
+    color: #e0e0e0;
+    padding-bottom: 80px; /* 为底部工具栏留出空间 */
+}
+
+/* 顶部导航 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #232531;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.icon {
+    font-size: 18px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.nav-left .icon { margin-left: 0; }
+
+/* 副导航 */
+.sub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.word-count {
+    color: #a0a0a0;
+    font-size: 14px;
+}
+
+.filter-btn {
+    background-color: #3b3024;
+    color: #dca543;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+/* 字母分类头 */
+.section-header {
+    padding: 10px 20px;
+    background-color: #282a36;
+    color: #888;
+    font-size: 12px;
+    border-bottom: 1px solid #303241;
+}
+
+.section-count { margin-left: 10px; }
+
+/* 单词列表 */
+.word-item {
+    padding: 18px 20px;
+    border-bottom: 1px solid #303241;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.word-main {
+    display: flex;
+    align-items: baseline;
+}
+
+.word-text {
+    font-size: 17px;
+    font-weight: 500;
+    color: #e0e0e0;
+}
+
+.word-phonetic {
+    display: none;
+    font-size: 14px;
+    color: #888;
+    margin-left: 10px;
+}
+
+/* 展开状态的详细信息 */
+.word-details {
+    display: none;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.meaning-left {
+    display: flex;
+    align-items: baseline;
+    font-size: 14px;
+}
+
+.word-pos { color: #888; margin-right: 8px; }
+.word-translation { color: #e0e0e0; }
+
+.action-right {
+    display: flex;
+    gap: 15px;
+    color: #888;
+}
+
+/* --- 激活(展开)状态的样式 --- */
+.word-item.active {
+    background-color: #3e372e;
+    border-bottom: none;
+}
+
+.word-item.active .word-text {
+    color: #dca846; /* 高亮黄色 */
+}
+
+.word-item.active .word-phonetic {
+    display: inline;
+}
+
+.word-item.active .word-details {
+    display: flex;
+}
+
+/* 底部工具栏 */
+.bottom-bar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background-color: #2a2c3a;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.tool-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #a0a0a0;
+    font-size: 10px;
+    gap: 5px;
+}
+
+.tool-icon {
+    font-size: 18px;
+    color: #dca846;
+}
