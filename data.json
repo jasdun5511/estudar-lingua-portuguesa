@@ -1,0 +1,44 @@
+[
+  {
+    "word": "abandonar",
+    "phonetic": "/abɐ̃do'naɾ/",
+    "pos": "vt.",
+    "meaning": "放弃，抛弃"
+  },
+  {
+    "word": "aberto",
+    "phonetic": "/a'bɛɾtu/",
+    "pos": "adj.",
+    "meaning": "打开的，开放的"
+  },
+  {
+    "word": "abraçar",
+    "phonetic": "/abɾa'saɾ/",
+    "pos": "vt.",
+    "meaning": "拥抱，包含"
+  },
+  {
+    "word": "absoluto",
+    "phonetic": "/abso'lutu/",
+    "pos": "adj.",
+    "meaning": "绝对的，完全的"
+  },
+  {
+    "word": "acabar",
+    "phonetic": "/aka'baɾ/",
+    "pos": "vt.",
+    "meaning": "完成，结束"
+  },
+  {
+    "word": "aceitar",
+    "phonetic": "/asej'taɾ/",
+    "pos": "vt.",
+    "meaning": "接受，同意"
+  },
+  {
+    "word": "acidente",
+    "phonetic": "/asi'dẽtʃi/",
+    "pos": "n.",
+    "meaning": "事故，意外"
+  }
+]
